@@ -1,0 +1,362 @@
+body{
+    font-size: 1.125rem;
+    margin: 0;
+    height: 100vh;
+    font-family: "Fraunces";
+}
+
+p{
+    font-family: "Barlow";
+}
+
+.header-div{
+    background-image: url("./images/desktop/image-header.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    padding: 2rem;
+    height: 39.875rem;
+}
+
+#hide{
+    display: none;
+}
+
+#harmburger:hover{
+    cursor: pointer;
+}
+
+.mobile-nav-links{
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    padding: 2rem 0;
+}
+
+.mobile-nav-links .contact{
+    border: 2px solid white;
+    border-radius: 1.25rem;
+    text-transform: uppercase;
+    font-size: 0.9375rem;
+    font-weight: 600;
+    padding: 0.4125rem 0.825rem;
+    background-color: yellow;
+    color: black;
+}
+
+.mobile-nav-links .link, .mobile-nav-links .link-a, .mobile-nav-links .link-b{
+    color: black;
+}
+
+.link-a{
+    margin: 0 2rem;
+}
+
+.link-b{
+    margin-right: 2rem;
+}
+
+.link, .link-a, .link-b{
+    color: white;
+    font-family: "Barlow";
+}
+
+.contact{
+    border: 2px solid white;
+    border-radius: 1.25rem;
+    text-transform: uppercase;
+    font-size: 0.9375rem;
+    font-weight: 600;
+    padding: 0.4125rem 0.825rem;
+    background-color: white;
+    color: black;
+}
+
+.contact:hover{
+    background-color: hsl(198, 86%, 45%);
+    color: white;
+    border-color: hsl(198, 86%, 45%);
+}
+
+.creative{
+    margin-top: 8.125rem;
+    text-align: center;
+}
+
+.creative img{
+    margin-top: 3rem;
+}
+
+.creative h1{
+    word-spacing: 0.4375rem;
+    margin-bottom: 3.125rem;
+    color: white;
+    letter-spacing: 0.5rem;
+}
+
+.img{
+    width: 100%;
+}
+
+.client-img{
+    border-radius: 50%;
+}
+
+a{
+    text-decoration: none;
+}
+
+nav{
+    margin: 0 2rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.transform, .standout, .graphic-photography{
+    display: flex;
+    justify-content: center;
+}
+
+.tran-txt{
+    margin: 9.375rem 6.25rem;
+}
+
+.learn-more{
+    color: black;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 0.9375rem;
+}
+
+.tran-txt .learn-more{
+    text-decoration: underline 0.1875rem hsl(7, 99%, 70%);
+}
+
+.tran-txt .learn-more:hover{
+    text-decoration: underline 0.1875rem hsl(51, 100%, 49%);
+}
+
+.standout{
+    margin-top: -0.3125rem;
+}
+
+.std-text{
+    margin: 9.375rem 6.875rem;
+}
+
+.std-text .learn-more{
+    text-decoration: underline 0.1875rem hsl(51, 100%, 49%);
+}
+
+.std-text .learn-more:hover{
+    text-decoration: underline 0.1875rem hsl(7, 99%, 70%);
+}
+
+.graphic-photography{
+    margin-top: -1.5625rem;
+}
+
+.design-text, .photography-text{
+    position: relative;
+    top: -11.625rem;
+    text-align: center;
+    padding: 0 8.7rem;
+}
+
+.graphic-design,.photography,.standout-img,.standout-text,.trans-img,.trans-text{
+    width: 50%;
+}
+
+.testimonials{
+    text-align: center;
+    padding: 4.125rem;
+    margin-top: -9.6875rem;
+}
+
+.clients{
+    display: flex;
+}
+
+.client{
+    padding: 1rem;
+}
+
+.pre-footer{
+    display: flex;
+}
+
+.mobile{
+    display: none;
+}
+
+footer{
+    text-align: center;
+    background-color: hsl(168, 34%, 41%);
+    position: relative;
+    top: -1.625rem;
+    padding: 2rem 0;
+    color: hsl(213, 9%, 39%);
+}
+
+.footer-links a{
+    color: hsl(213, 9%, 39%);
+}
+
+.footer-links a:hover{
+    color: white;
+}
+
+.footer-links a:nth-child(2){
+    margin: 0 2rem;
+}
+
+.icon-social-links{
+    margin-top: 2rem;
+}
+
+.icon-social-links a:nth-child(2){
+    margin: 0 1rem;
+}
+
+.icon-social-links a:nth-child(3){
+    margin-right: 1rem;
+}
+
+.icon-social-links a img:hover{
+    background-color: white;
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+.hide{
+    display: none;
+}
+
+@media screen and (max-width: 560px){
+    .header-div{
+        background-image: url("./images/mobile/image-header.jpg");
+        background-repeat: no-repeat;
+        background-size: contain;
+        padding: 2rem;
+        margin-bottom: -0.625rem;
+    }
+
+    nav{
+        margin: 0;
+    }
+
+    .nav-links{
+        display: none;
+    }
+
+    .transform, .standout, .graphic-photography,.clients,.pre-footer{
+        flex-direction: column;
+    }
+
+    .graphic-design,.photography,.standout-img,.standout-text,.trans-img,.trans-text{
+        width: auto;
+    }
+
+    .tran-txt,.std-text{
+        text-align: center;
+        margin: 4.375rem 5.625rem;
+    }
+
+    .trans-img:nth-child(2){
+        display: none;
+    }
+
+    .design-text, .photography-text{
+        padding: 0 4rem;
+    }
+    .photography{
+        margin-top: -11.2rem;
+    }
+    .desktop{
+        display: none;
+    }
+    .mobile{
+        display: flex;
+    }
+    .mob{
+        margin-top: -0.3125rem;
+    }
+    .link-b{
+        margin: 1rem 0;
+    }
+    .link-a{
+        margin: 1rem 0 0 0;
+    }
+}
+
+@media screen and (max-width: 375px){
+    .header-div{
+        background-image: url("./images/mobile/image-header.jpg");
+        background-repeat: no-repeat;
+        background-size: contain;
+        padding: 1rem;
+        margin-bottom: -8.375rem;
+    }
+
+    nav{
+        margin: 0;
+    }
+
+    .nav-links{
+        display: none;
+    }
+
+    .transform, .standout, .graphic-photography,.clients,.pre-footer{
+        flex-direction: column;
+    }
+
+    .graphic-design,.photography,.standout-img,.standout-text,.trans-img,.trans-text{
+        width: auto;
+    }
+
+    .tran-txt,.std-text{
+        text-align: center;
+        margin: 2.375rem 1rem;
+    }
+
+    .trans-img:nth-child(2){
+        display: none;
+    }
+
+    .design-text, .photography-text{
+        padding: 0 1rem;
+    }
+    .photography{
+        margin-top: -11.18rem;
+    }
+    .desktop{
+        display: none;
+    }
+    .mobile{
+        display: flex;
+    }
+    .mob{
+        margin-top: -0.3125rem;
+    }
+    .link-b{
+        margin: 1rem 0;
+    }
+    .link-a{
+        margin: 1rem 0 0 0;
+    }
+    .testimonials{
+        padding: 1rem;
+    }
+    #harmburger{
+        margin-right: 1rem;
+    }
+}
