@@ -32,7 +32,7 @@ p{
     justify-content: center;
     align-items: center;
     background-color: white;
-    padding: 2rem 0;
+    padding: 4rem 0;
 }
 
 .mobile-nav-links .contact{
@@ -304,7 +304,7 @@ footer{
         background-repeat: no-repeat;
         background-size: contain;
         padding: 1rem;
-        margin-bottom: -8.375rem;
+        margin-bottom: -10.375rem;
     }
 
     nav{
@@ -358,5 +358,8 @@ footer{
     }
     #harmburger{
         margin-right: 1rem;
+    }
+    .creative{
+        margin-top: 6.125rem;
     }
 }
